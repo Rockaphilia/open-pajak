@@ -5,7 +5,7 @@ import {
   hitungPajakPasal17,
   roundDownToThousand,
 } from './utils'
-import type { TaxResult } from './types'
+import type { TaxBreakdownRow, TaxResult } from './types'
 
 export type PPh21SubjectType =
   | 'pegawai_tetap'

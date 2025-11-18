@@ -1,5 +1,10 @@
 import { cn } from '../../lib/cn'
-import type { HTMLAttributes, TableHTMLAttributes } from 'react'
+import type {
+  HTMLAttributes,
+  TableHTMLAttributes,
+  TdHTMLAttributes,
+  ThHTMLAttributes,
+} from 'react'
 
 export function Table({
   className,
@@ -47,7 +52,7 @@ export function TableRow({
 export function TableHead({
   className,
   ...props
-}: HTMLAttributes<HTMLTableCellElement>) {
+}: ThHTMLAttributes<HTMLTableCellElement>) {
   return (
     <th
       className={cn('px-3 py-2 text-left font-medium tracking-wide', className)}
@@ -59,7 +64,7 @@ export function TableHead({
 export function TableCell({
   className,
   ...props
-}: HTMLAttributes<HTMLTableCellElement>) {
+}: TdHTMLAttributes<HTMLTableCellElement>) {
   return (
     <td className={cn('px-3 py-2 align-top text-sm', className)} {...props} />
   )

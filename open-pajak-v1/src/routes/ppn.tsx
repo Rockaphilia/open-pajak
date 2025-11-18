@@ -58,6 +58,13 @@ function PpnPage() {
   )
 
   const result = useMemo(() => calculatePpn(normalizedForm), [normalizedForm])
+  const handleCustomRateChange = (value: string) => {
+    const numeric = Number(value)
+    setForm((prev) => ({
+      ...prev,
+      customRate: Number.isFinite(numeric) ? numeric : 0,
+    }))
+  }
 
   return (
     <TaxPageLayout
@@ -141,7 +148,7 @@ function PpnPage() {
                 max={100}
                 value={form.customRate}
                 onChange={(event) =>
-                  onNumberChange('customRate', event.target.value)
+                  handleCustomRateChange(event.target.value)
                 }
               />
             </FormField>
