@@ -40,6 +40,17 @@ const ptkpOptions: Array<string> = [
   'K/3',
 ]
 
+const PTKP_TER_MAPPING: Partial<Record<string, 'A' | 'B' | 'C'>> = {
+  'TK/0': 'A',
+  'TK/1': 'A',
+  'K/0': 'A',
+  'TK/2': 'B',
+  'TK/3': 'B',
+  'K/1': 'B',
+  'K/2': 'B',
+  'K/3': 'C',
+}
+
 const TER_DEFAULTS: Partial<Record<PPh21SubjectType, 'A' | 'B' | 'C'>> = {
   pegawai_tetap: 'A',
   pensiunan: 'A',
@@ -96,11 +107,13 @@ function Pph21Page() {
   const [form, setForm] = useState<Pph21FormState>(createSampleForm)
 
   useEffect(() => {
-    const autoTer = TER_DEFAULTS[form.subjectType]
-    if (autoTer && autoTer !== form.terCategory) {
-      setForm((prev) => ({ ...prev, terCategory: autoTer }))
+    const terFromStatus = PTKP_TER_MAPPING[form.ptkpStatus]
+    const terFromSubject = TER_DEFAULTS[form.subjectType]
+    const nextTer = terFromStatus ?? terFromSubject
+    if (nextTer && nextTer !== form.terCategory) {
+      setForm((prev) => ({ ...prev, terCategory: nextTer }))
     }
-  }, [form.subjectType, form.terCategory])
+  }, [form.ptkpStatus, form.subjectType, form.terCategory])
 
   const handleNumberChange = (
     field: keyof typeof form,
@@ -227,20 +240,25 @@ function Pph21Page() {
           {form.subjectType !== 'wpln' && (
             <>
               <div className="grid gap-4 md:grid-cols-2">
-                <FormField label="Status PTKP" htmlFor="ptkpStatus">
-                  <Select
-                    id="ptkpStatus"
-                    value={form.ptkpStatus}
-                    onChange={(event) =>
-                      setForm((prev) => ({
-                        ...prev,
-                        ptkpStatus: event.target.value,
-                      }))
-                    }
-                  >
-                    {ptkpOptions.map((option) => (
-                      <option key={option} value={option}>
-                        {option}
+          <FormField label="Status PTKP" htmlFor="ptkpStatus">
+            <Select
+              id="ptkpStatus"
+              value={form.ptkpStatus}
+              onChange={(event) =>
+                setForm((prev) => {
+                  const nextStatus = event.target.value
+                  const nextTer = PTKP_TER_MAPPING[nextStatus]
+                  return {
+                    ...prev,
+                    ptkpStatus: nextStatus,
+                    terCategory: nextTer ?? prev.terCategory,
+                  }
+                })
+              }
+            >
+              {ptkpOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
                       </option>
                     ))}
                   </Select>
