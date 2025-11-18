@@ -1,0 +1,7 @@
+{
+  "name": "open-pajak",
+  "compatibility_date": "2025-02-16",
+  "assets": {
+    "directory": "./dist"
+  }
+}
