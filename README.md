@@ -18,16 +18,15 @@ open-pajak/
 ├─ open-pajak-v1/           # Bun + Vite workspace
 │  ├─ src/
 │  │  ├─ components/        # AppShell, tax layout primitives, shadcn wrappers
-│  │  ├─ lib/tax/           # Pure calculators per tax type (see tax-formulas-mapping.md)
+│  │  ├─ lib/tax/           # Pure calculators per tax type
 │  │  └─ routes/            # File-based TanStack Router pages (one per tax calculator)
 │  ├─ public/               # Static assets (favicon, Buku PPh reference PDF)
 │  ├─ bun.lock / package.json / tsconfig.json
 │  └─ vite.config.ts        # Vite + TanStack router plugin + Tailwind setup
-├─ design.md                # UX + flow specs (keep handy when iterating)
-└─ tax-formulas-mapping.md  # Mapping from regulations → calculator logic
+└─ ...                      # Local planning docs (kept outside version control)
 ```
 
-> ℹ️ Only `README.md` is intended for upstream pushes; the other docs are local guidance to help reason about the product scope and formula mapping.
+> ℹ️ Only `README.md` is intended for upstream pushes; other docs stay local for planning/reference.
 
 ## Getting Started
 
@@ -62,8 +61,6 @@ Add new tests next to their pages/engines (e.g., `src/routes/pph21/pph21.page.te
 2. **Update the UI** inside `src/routes/<tax-type>.tsx`, using shared primitives such as `TaxFormSection`, `TaxResultTable`, and `TaxSummaryCard`.
 3. **Document formulas** with `FormulaExplanationCard` and source links so users can trace regulations back to Buku PPh / PMK references.
 4. **Respect privacy**: inputs must remain numeric or enumerated metadata; never prompt for or persist personal identifiers.
-
-Refer to `design.md` for UX copy, layout heuristics, and color tokens, and to `tax-formulas-mapping.md` for regulation-to-function mappings whenever you add or change flows.
 
 ## Deployment Notes
 
