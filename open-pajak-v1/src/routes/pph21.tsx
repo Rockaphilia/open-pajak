@@ -150,10 +150,6 @@ function Pph21Page() {
     typeof takeHomePerPeriodRow?.value === 'number'
       ? takeHomePerPeriodRow.value
       : undefined
-  const takeHomeLabel =
-    takeHomePerPeriodRow?.note && takeHomePerPeriodRow.note !== '—'
-      ? takeHomePerPeriodRow.note
-      : 'per masa'
   const terPerPeriodRow = result.breakdown.find(
     (row) => row.label === 'PPh 21 TER per masa',
   )
@@ -412,7 +408,6 @@ function Pph21Page() {
           decemberAdjustment={decemberAdjustment}
           takeHomeAnnual={takeHomeAnnual}
           takeHomePerPeriod={takeHomePerPeriod}
-          takeHomePeriodLabel={takeHomeLabel}
         />
       }
       result={<TaxResultTable breakdown={result.breakdown} />}
