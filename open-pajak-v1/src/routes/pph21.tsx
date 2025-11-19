@@ -138,6 +138,34 @@ function Pph21Page() {
   )
 
   const result = useMemo(() => calculatePph21(normalizedForm), [normalizedForm])
+  const takeHomeAnnualRow = result.breakdown.find(
+    (row) => row.label === 'Take-home setahun',
+  )
+  const takeHomePerPeriodRow = result.breakdown.find(
+    (row) => row.label === 'Take-home per masa',
+  )
+  const takeHomeAnnual =
+    typeof takeHomeAnnualRow?.value === 'number' ? takeHomeAnnualRow.value : undefined
+  const takeHomePerPeriod =
+    typeof takeHomePerPeriodRow?.value === 'number'
+      ? takeHomePerPeriodRow.value
+      : undefined
+  const takeHomeLabel =
+    takeHomePerPeriodRow?.note && takeHomePerPeriodRow.note !== '—'
+      ? takeHomePerPeriodRow.note
+      : 'per masa'
+  const terPerPeriodRow = result.breakdown.find(
+    (row) => row.label === 'PPh 21 TER per masa',
+  )
+  const decemberAdjustmentRow = result.breakdown.find(
+    (row) => row.label === 'Penyesuaian Desember',
+  )
+  const terPerPeriod =
+    typeof terPerPeriodRow?.value === 'number' ? terPerPeriodRow.value : undefined
+  const decemberAdjustment =
+    typeof decemberAdjustmentRow?.value === 'number'
+      ? decemberAdjustmentRow.value
+      : undefined
   const totalNegatives = Object.entries(form).filter(
     ([, value]) => typeof value === 'number' && value < 0,
   )
@@ -380,8 +408,11 @@ function Pph21Page() {
       summary={
         <TaxSummaryCard
           total={result.totalTax}
-          label="Estimasi PPh 21/26"
-          meta="TER Jan–Nov, selisih Pasal 17 dibayar di Desember"
+          terPerPeriod={terPerPeriod}
+          decemberAdjustment={decemberAdjustment}
+          takeHomeAnnual={takeHomeAnnual}
+          takeHomePerPeriod={takeHomePerPeriod}
+          takeHomePeriodLabel={takeHomeLabel}
         />
       }
       result={<TaxResultTable breakdown={result.breakdown} />}
