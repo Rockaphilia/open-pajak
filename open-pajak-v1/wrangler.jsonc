@@ -1,6 +1,6 @@
 {
   "name": "open-pajak",
-  "main": "public/_worker.js",
+  "main": "worker/_worker.js",
   "compatibility_date": "2025-02-16",
   "assets": {
     "directory": "./dist",
