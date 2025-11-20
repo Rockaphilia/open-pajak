@@ -1,5 +1,5 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
-import { ArrowRightIcon, Calculator, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowRightIcon, Calculator, Github, ShieldCheck, Sparkles } from 'lucide-react'
 import { Card, CardContent } from '../components/ui/card'
 import { Button } from '../components/ui/button'
 import { FormulaSourceNote } from '../components/FormulaSourceNote'
@@ -18,6 +18,8 @@ const calculatorCards = [
   { to: '/ppn', titleKey: 'home.calculatorList.cards.ppn.title', descKey: 'home.calculatorList.cards.ppn.description' },
   { to: '/ppnbm', titleKey: 'home.calculatorList.cards.ppnbm.title', descKey: 'home.calculatorList.cards.ppnbm.description' },
 ]
+
+const GITHUB_URL = 'https://github.com/hamardikan/open-pajak'
 
 function HomePage() {
   const { t } = useTranslation()
@@ -46,7 +48,15 @@ function HomePage() {
               </Link>
             </Button>
             <Button variant="outline" asChild size="lg">
-              <Link to="/ppn">{t('home.hero.ctaSecondary')}</Link>
+              <a
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Github className="size-4" />
+                {t('home.hero.ctaSecondary')}
+              </a>
             </Button>
           </div>
         </div>

@@ -26,8 +26,8 @@ export function TaxSummaryCard({
 
   return (
     <Card className="border border-[#f6ce7d]/60 bg-gradient-to-br from-[#fffaf2] to-[#fff4d8] px-6 py-4 shadow-sm">
-      <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-        <div className="w-full space-y-3">
+      <div className="grid gap-6 lg:grid-cols-2">
+        <div className="space-y-3">
           <CardTitle className="text-xs font-semibold uppercase tracking-[0.3em] text-[#967000]">
             {taxLabel}
           </CardTitle>
@@ -48,7 +48,7 @@ export function TaxSummaryCard({
           )}
         </div>
 
-        <div className="w-full space-y-3">
+        <div className="space-y-3">
           <CardTitle className="text-xs font-semibold uppercase tracking-[0.3em] text-[#967000]">
             {t('summary.takeHome')}
           </CardTitle>

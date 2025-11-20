@@ -20,6 +20,7 @@
       "startSimulation": "Start simulation",
       "clearForm": "Clear form",
       "useSample": "Use sample",
+      "github": "GitHub",
       "openNav": "Open navigation",
       "closeNav": "Close navigation"
     },
@@ -34,7 +35,7 @@
       "title": "All-in-one Indonesian tax calculators.",
       "body": "Everything runs entirely in your browser—no personal data, no backend. Perfect for quick simulations or reviewing liabilities before filing.",
       "ctaPrimary": "Start calculating",
-      "ctaSecondary": "Quick VAT"
+      "ctaSecondary": "GitHub"
     },
     "features": [
       {

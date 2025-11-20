@@ -20,6 +20,7 @@
       "startSimulation": "Mulai simulasi",
       "clearForm": "Kosongkan Form",
       "useSample": "Gunakan Contoh",
+      "github": "GitHub",
       "openNav": "Buka navigasi",
       "closeNav": "Tutup navigasi"
     },
@@ -34,7 +35,7 @@
       "title": "Kalkulator pajak Indonesia serba ada.",
       "body": "Semua perhitungan berjalan sepenuhnya di browser Anda. Tidak ada data pribadi, tidak ada backend. Cocok untuk simulasi cepat maupun review kewajiban pajak sebelum lapor.",
       "ctaPrimary": "Mulai hitung",
-      "ctaSecondary": "PPN Cepat"
+      "ctaSecondary": "GitHub"
     },
     "features": [
       {

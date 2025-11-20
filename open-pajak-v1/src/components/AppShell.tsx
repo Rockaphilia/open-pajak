@@ -1,11 +1,13 @@
 import { Link, useRouterState } from '@tanstack/react-router'
-import { Menu, X } from 'lucide-react'
+import { Github, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { cn } from '../lib/cn'
 import { Button } from './ui/button'
 import type { ReactNode } from 'react'
 import { availableLocales, changeLocale } from '../i18n/config'
+
+const GITHUB_URL = 'https://github.com/hamardikan/open-pajak'
 
 const NAV_LINKS: Array<{ to: string; labelKey: string }> = [
   { to: '/', labelKey: 'app.nav.home' },
@@ -81,7 +83,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
           <div className="hidden flex-1 items-center justify-between gap-4 md:flex">
             <div className="flex-1">{renderNav('dark')}</div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <select
                 aria-label="Change language"
                 value={i18n.language}
@@ -94,6 +96,19 @@ export function AppShell({ children }: { children: ReactNode }) {
                   </option>
                 ))}
               </select>
+              <Button variant="accent" asChild>
+                <a
+                  href={GITHUB_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <Github className="size-4" />
+                  <span className="uppercase tracking-wide text-xs">
+                    {t('app.buttons.github')}
+                  </span>
+                </a>
+              </Button>
             </div>
           </div>
 
@@ -147,6 +162,12 @@ export function AppShell({ children }: { children: ReactNode }) {
               </option>
             ))}
           </select>
+          <Button asChild className="w-full" variant="outline">
+            <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2">
+              <Github className="size-4" />
+              {t('app.buttons.github')}
+            </a>
+          </Button>
         </div>
       </div>
 

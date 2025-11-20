@@ -20,6 +20,7 @@
       "startSimulation": "シミュレーション開始",
       "clearForm": "クリア",
       "useSample": "サンプル入力",
+      "github": "GitHub",
       "openNav": "メニューを開く",
       "closeNav": "メニューを閉じる"
     },
@@ -34,7 +35,7 @@
       "title": "インドネシア税の計算をこの一つで。",
       "body": "すべての計算はブラウザ内で完結。個人情報やサーバー送信は不要です。申告前のチェックやクイックシミュレーションに最適です。",
       "ctaPrimary": "計算を始める",
-      "ctaSecondary": "かんたんVAT"
+      "ctaSecondary": "GitHub"
     },
     "features": [
       {

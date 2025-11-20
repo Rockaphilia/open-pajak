@@ -20,6 +20,7 @@
       "startSimulation": "开始试算",
       "clearForm": "清空表单",
       "useSample": "载入示例",
+      "github": "GitHub",
       "openNav": "打开导航",
       "closeNav": "关闭导航"
     },
@@ -34,7 +35,7 @@
       "title": "一站式印尼税务计算。",
       "body": "所有计算都在浏览器内完成，不上传任何个人信息。适合快速模拟或申报前复核。",
       "ctaPrimary": "开始计算",
-      "ctaSecondary": "快速增值税"
+      "ctaSecondary": "GitHub"
     },
     "features": [
       {
