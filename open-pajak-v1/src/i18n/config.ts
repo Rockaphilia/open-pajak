@@ -5,6 +5,7 @@ import id from './locales/id/common.json'
 import en from './locales/en/common.json'
 import ja from './locales/ja/common.json'
 import ko from './locales/ko/common.json'
+import nl from './locales/nl/common.json'
 import zh from './locales/zh/common.json'
 import zhTW from './locales/zh-TW/common.json'
 
@@ -13,6 +14,7 @@ export const availableLocales = [
   { code: 'en', label: 'English', emoji: '🇺🇸' },
   { code: 'ja', label: '日本語', emoji: '🇯🇵' },
   { code: 'ko', label: '한국어', emoji: '🇰🇷' },
+  { code: 'nl', label: 'Nederlands', emoji: '🇳🇱' },
   { code: 'zh', label: '简体中文', emoji: '🇨🇳' },
   { code: 'zh-TW', label: '繁體中文', emoji: '🇹🇼' },
 ]
@@ -22,6 +24,7 @@ const resources = {
   en: { translation: en },
   ja: { translation: ja },
   ko: { translation: ko },
+  nl: { translation: nl },
   zh: { translation: zh },
   'zh-TW': { translation: zhTW },
 }

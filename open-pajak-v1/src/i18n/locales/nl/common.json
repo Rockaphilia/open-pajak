@@ -1,0 +1,570 @@
+{
+  "app": {
+    "brand": "Open Pajak",
+    "brandMain": "Open",
+    "brandAccent": "Pajak",
+    "tagline": "Open-source belastingtoolkit",
+    "taglineLine1": "Open source",
+    "taglineLine2": "Belastingtoolkit",
+    "nav": {
+      "home": "Home",
+      "pph21": "PPh 21/26",
+      "pph22": "PPh 22",
+      "pph23": "PPh 23",
+      "pph4_2": "PPh 4(2)",
+      "ppn": "BTW",
+      "ppnbm": "Luxe-BTW"
+    },
+    "buttons": {
+      "pph21Simulator": "PPh 21-simulator",
+      "startSimulation": "Start simulatie",
+      "clearForm": "Formulier leegmaken",
+      "useSample": "Gebruik voorbeeld",
+      "github": "GitHub",
+      "openNav": "Navigatie openen",
+      "closeNav": "Navigatie sluiten"
+    },
+    "menu": {
+      "title": "Hoofdmenu",
+      "subtitle": "Kies de calculator die je nodig hebt."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Open Pajak",
+      "title": "Alles-in-één Indonesische belastingcalculators.",
+      "body": "Alles draait volledig in je browser—geen persoonsgegevens, geen backend. Perfect voor snelle simulaties of om verplichtingen te controleren vóór aangifte.",
+      "ctaPrimary": "Begin met berekenen",
+      "ctaSecondary": "GitHub"
+    },
+    "features": [
+      {
+        "title": "6 hoofdcalculators",
+        "description": "PPh 21/26, 22, 23, Final 4(2), BTW en Luxe-BTW volgen de nieuwste DJP-formules."
+      },
+      {
+        "title": "Privacy eerst",
+        "description": "We vragen nooit om NIK, namen of adressen—alleen bedragen en transactie­types."
+      },
+      {
+        "title": "Transparante formules",
+        "description": "Elke uitkomst komt met een stap-voor-stap tabel en verwijzing naar regelgeving."
+      }
+    ],
+    "calculatorList": {
+      "title": "Kies een calculator",
+      "subtitle": "Elke pagina biedt invoervelden, een resultaat­tabel en formulenotities.",
+      "cards": {
+        "pph21": {
+          "title": "PPh 21/26",
+          "description": "Werknemers, niet-werknemers en niet-ingezetenen."
+        },
+        "pph22": {
+          "title": "PPh 22",
+          "description": "Import, olie & gas, SOE-aankopen, bijzondere gevallen."
+        },
+        "pph23": {
+          "title": "PPh 23",
+          "description": "Technische diensten, consultancy, materieelhuur, dividenden, rente."
+        },
+        "pph4_2": {
+          "title": "Finale PPh 4(2)",
+          "description": "Huur grond, bouw, restaurants, PP23-mkb."
+        },
+        "ppn": {
+          "title": "BTW",
+          "description": "Automatische DPP voor incl./excl.-prijzen."
+        },
+        "ppnbm": {
+          "title": "Luxe-BTW",
+          "description": "Voertuigen, sieraden, premium elektronica."
+        }
+      }
+    }
+  },
+  "table": {
+    "component": "Component",
+    "value": "Bedrag (IDR)",
+    "note": "Opmerking / formule"
+  },
+  "summary": {
+    "taxOverview": "Belastingoverzicht",
+    "takeHome": "Netto loon",
+    "totalTax": "Totale PPh 21/26",
+    "terMonthly": "TER per maand",
+    "decAdjustment": "Correctie december",
+    "thpAnnual": "Jaarlijks THP",
+    "thpPeriod": "THP per periode"
+  },
+  "receipts": {
+    "defaultTitle": "{{type}} bon",
+    "panel": {
+      "title": "Bon & historie",
+      "subtitle": "Sla dit resultaat op of beheer bulkuploads."
+    },
+    "actions": {
+      "preview": "Bonvoorbeeld",
+      "history": "Historie",
+      "save": "Bon opslaan",
+      "downloadPdf": "Print / PDF",
+      "downloadExcel": "Excel downloaden",
+      "delete": "Verwijderen",
+      "scrollTop": "Terug naar boven"
+    },
+    "modal": {
+      "title": "Bonvoorbeeld",
+      "name": "Bonnaam",
+      "identifier": "Identificatie / personeelscode",
+      "group": "Groep / project",
+      "groupHint": "Gebruik hetzelfde label om bijbehorende bonnen te bundelen.",
+      "created": "Aangemaakt op",
+      "breakdownTitle": "Waterfall-overzicht",
+      "dataTitle": "Formuliermoment",
+      "source": {
+        "manual": "Handmatige invoer",
+        "bulk": "Bulkupload"
+      }
+    },
+    "summary": {
+      "totalTax": "Totale belasting",
+      "terMonthly": "TER per periode",
+      "decAdjustment": "Correctie december",
+      "thpAnnual": "Jaarlijks THP",
+      "thpPeriod": "THP per periode"
+    },
+    "boolean": {
+      "true": "Ja",
+      "false": "Nee"
+    },
+    "history": {
+      "title": "Bonhistorie",
+      "recordsCount": "{{count}} bonnen totaal",
+      "countLabel": "{{count}} bonnen",
+      "groupLabel": "Ongegroepeerd",
+      "empty": "Nog geen bonnen opgeslagen.",
+      "noResult": "Geen bonnen gevonden die passen bij je zoekopdracht.",
+      "batchTitle": "Bulkgroepen",
+      "batchEmpty": "Nog geen bulkuploads.",
+      "downloadBatch": "Batch-Excel downloaden",
+      "viewBatch": "Bonnen tonen",
+      "hideBatch": "Bonnen verbergen",
+      "searchPlaceholder": "Zoek bonnen of groepen...",
+      "sortLabel": "Sorteren",
+      "sortNewest": "Nieuwste",
+      "sortOldest": "Oudste",
+      "sortName": "A-Z"
+    },
+    "bulk": {
+      "title": "Bulkupload (Excel)",
+      "description": "Importeer meerdere werknemers voor PPh 21/26 via onze template.",
+      "downloadTemplate": "Excel-template downloaden",
+      "uploadLabel": "Upload Excel (.xls)",
+      "pending": "Verwerken van {{count}} rij(en)…",
+      "success": "Opgeslagen {{count}} bonnen onder \"{{group}}\"",
+      "error": "Het bestand kon niet worden verwerkt. Controleer de kolommen.",
+      "untitled": "Naamloze bon"
+    },
+    "fields": {
+      "subjectType": "Subjekttype",
+      "brutoMonthly": "Bruto / periode",
+      "monthsPaid": "Betaalde periodes",
+      "pensionContribution": "Pensioenbijdrage",
+      "bonusAnnual": "Bonus",
+      "ptkpStatus": "PTKP-status",
+      "scheme": "Schema",
+      "terCategory": "TER-categorie",
+      "zakatOrDonation": "Zakat / donatie",
+      "foreignTaxRate": "Buitenlands tarief",
+      "isDailyWorker": "Dagloner"
+    },
+    "print": {
+      "title": "Belastingbon",
+      "meta": "Bon-ID",
+      "group": "Groep",
+      "identifier": "Identificatie",
+      "visitSite": "Bezoek site",
+      "github": "GitHub"
+    }
+  },
+  "pph21": {
+    "title": "PPh 21/26-calculator",
+    "description": "Schat inhouding voor werknemers, opdrachtnemers en buitenlandse belastingplichtigen. Vergelijk oud schema met TER.",
+    "summary": {
+      "meta": "TER voor jan–nov; december verrekent Pasal 17"
+    },
+    "form": {
+      "title": "Inkomensgegevens",
+      "description": "Voer bruto-inkomen en periodeparameters in.",
+      "fields": {
+        "subjectType": "Subjekttype",
+        "brutoMonthly": "Bruto-inkomen per periode",
+        "monthsPaid": "Aantal periodes (maand/dag)",
+        "pensionContribution": "Pensioenbijdrage per periode",
+        "bonusAnnual": "Jaarlijkse bonus/THR",
+        "ptkpStatus": "PTKP-status",
+        "zakat": "Zakat/Donatie (jaarlijks)",
+        "scheme": "Schema",
+        "terCategory": "TER-categorie"
+      },
+      "descriptions": {
+        "monthsPaid": "Maximaal 12.",
+        "zakat": "Via werkgever, optioneel",
+        "terCategory": "Automatisch op basis van subject; je kunt het overschrijven."
+      }
+    },
+    "subjectOptions": {
+      "pegawai_tetap": "Vaste werknemer",
+      "pensiunan": "Gepensioneerde",
+      "pegawai_tidak_tetap": "Niet-vaste werknemer",
+      "bukan_pegawai": "Niet-werknemer",
+      "peserta_kegiatan": "Deelnemer aan activiteit",
+      "program_pensiun": "Pensioenopname",
+      "mantan_pegawai": "Voormalig werknemer",
+      "wpln": "PPh 26 (niet-ingezetene)"
+    },
+    "schemeOptions": {
+      "lama": "Oud schema (Pasal 17)",
+      "ter": "TER (effectief tarief)"
+    },
+    "terOptions": {
+      "A": "Categorie A",
+      "B": "Categorie B",
+      "C": "Categorie C"
+    },
+    "toggleDaily": {
+      "title": "Dagelijkse berekening gebruiken?",
+      "description": "Schakel over naar dagelijkse TER wanneer de werknemer per dag wordt betaald.",
+      "daily": "Dagelijks",
+      "monthly": "Maandelijks"
+    },
+    "wplnField": {
+      "label": "PPh 26-tarief",
+      "description": "Percentage"
+    },
+    "explanationTitle": "Korte formule",
+    "explanation": [
+      "Belastinggrondslag hangt af van subject (50% bruto, TER of volledig).",
+      "PTKP geldt voor personeel/pensioen bij het oude schema.",
+      "PKP wordt naar beneden afgerond op de dichtstbijzijnde IDR 1.000 vóór Pasal 17.",
+      "TER-categorieën volgen PER-2/PJ/2024."
+    ],
+    "info": {
+      "goodPractice": "Belangrijke herinneringen",
+      "points": [
+        "Niets wordt opgeslagen; berekeningen blijven in je browser.",
+        "PKP wordt afgerond conform regelgeving.",
+        "Werknemers gebruiken TER voor jan–nov en verrekenen met Pasal 17 in december.",
+        "TER-tabellen volgen DJP-richtlijnen—pas aan als je bedrijf eigen mapping gebruikt."
+      ],
+      "disclaimer": "Alleen schattingen. Controleer voor aangifte."
+    }
+  },
+  "pph26": {
+    "title": "PPh 26-calculator",
+    "description": "Simuleer inhouding voor niet-ingezetenen en vergelijk verdrags- versus binnenlandse tarieven."
+  },
+  "pph22": {
+    "title": "PPh 22-calculator",
+    "description": "Simuleer PPh 22-inningen voor import, SOE-aankopen, olie & gas of andere bijzondere gevallen.",
+    "form": {
+      "title": "PPh 22-object",
+      "description": "Geef DPP-details.",
+      "transactionType": "Transactietype",
+      "transactionValue": "Transactiewaarde (CIF/FOB)",
+      "otherCosts": "Extra kosten (+)",
+      "otherCostsNote": "Verzekering, vracht of andere correcties.",
+      "deduction": "Aftrek (-)",
+      "deductionNote": "Kortingen, niet-DPP-componenten of vrijstellingen.",
+      "transactionTypeOptions": {
+        "impor": "Algemene import",
+        "migas": "Olie- & gasindustrie",
+        "bumn": "Specifieke SOE-aankoop",
+        "lainnya": "Andere transactie"
+      }
+    },
+    "summary": {
+      "label": "Geïnde PPh 22",
+      "meta": "Tarief volgt transactietype"
+    },
+    "explanationTitle": "Rekenvolgorde",
+    "explanation": [
+      "DPP = Waarde + extra kosten − aftrek.",
+      "Tarieven volgen PER-38/PJ/2013 (import 2,5%, olie & gas 2%, SOE 1,5%).",
+      "PPh 22 = DPP × tarief."
+    ],
+    "info": {
+      "title": "Controlelijst",
+      "items": [
+        "Bevestig dat de goederen PPh 22-objecten zijn.",
+        "Tarieven kunnen wijzigen bij douane/BTW-incentives.",
+        "Bewaar het inhoudingsbewijs voor jaarlijkse tax credit."
+      ]
+    },
+    "breakdown": {
+      "baseSection": "Belastinggrondslag",
+      "taxSection": "Verschuldigde belasting",
+      "transaction": "Transactiewaarde",
+      "otherCosts": "Extra kosten",
+      "deduction": "Aftrek",
+      "dpp": "DPP (grondslag)",
+      "rate": "PPh 22-tarief",
+      "tax": "Geïnde PPh 22"
+    },
+    "notes": {
+      "otherCosts": "+ extra kosten",
+      "deduction": "- aftrek"
+    }
+  },
+  "pph23": {
+    "title": "PPh 23-calculator",
+    "description": "Bereken PPh 23 voor technische diensten, consultancy, verhuur van apparatuur, dividenden of rente.",
+    "form": {
+      "title": "Transactiedetails",
+      "incomeType": "Soort inkomsten",
+      "isFinal": "Finale?",
+      "isFinalDesc": "Dividenden en rente zijn meestal final.",
+      "gross": "Brutobedrag (voor BTW)"
+    },
+    "options": {
+      "serviceType": {
+        "jasaTeknik": "Technische diensten",
+        "jasaKonsultan": "Consultancy",
+        "sewaAlat": "Materieelhuur",
+        "dividen": "Dividend",
+        "bunga": "Rente"
+      },
+      "final": {
+        "yes": "Ja",
+        "no": "Nee"
+      }
+    },
+    "summary": {
+      "label": "PPh 23 verschuldigd",
+      "meta": "Tarief hangt af van diensttype"
+    },
+    "explanationTitle": "Formule",
+    "explanation": [
+      "Belastinggrondslag = brutobedrag vóór BTW.",
+      "Tarieven volgen Pasal 23 (2% diensten, 4% consultancy, 15% dividend/rente).",
+      "PPh 23 = grondslag × tarief."
+    ],
+    "info": {
+      "title": "Notities",
+      "items": [
+        "Houd in bij betaling of wanneer opeisbaar.",
+        "Gebruik formulier 1721-VII voor tax credit in de jaaropgave.",
+        "Tarieven wijzigen als de ontvanger een vrijstellingsbrief heeft."
+      ]
+    },
+    "breakdown": {
+      "section": "Bruto-inkomsten",
+      "gross": "Brutobedrag",
+      "rate": "PPh 23-tarief",
+      "tax": "Ingehouden PPh 23"
+    },
+    "notes": {
+      "final": "Finale (afgehandeld bij inhouding)",
+      "creditable": "Verrekenbaar"
+    }
+  },
+  "pph4_2_calc": {
+    "title": "Finale PPh 4(2)-calculator",
+    "description": "Finale inhouding voor huur grond, bouw, restaurants en PP23-mkb.",
+    "summary": {
+      "label": "Finale PPh 4(2)",
+      "meta": "Tarief automatisch gekozen per object"
+    },
+    "explanationTitle": "Stappen",
+    "form": {
+      "title": "Finale objectgegevens",
+      "objectType": "Objecttype",
+      "gross": "Brutobedrag",
+      "grossDesc": "Gebruik contractwaarde of omzet."
+    },
+    "options": {
+      "objectType": {
+        "sewaTanah": "Huur grond/gebouw (10%)",
+        "konstruksi": "Bouwdiensten (3,5%)",
+        "restoran": "Restaurantactiviteiten (5%)",
+        "umkmFinal": "PP23 mkb (0,5%)"
+      }
+    },
+    "explanation": [
+      "Belastinggrondslag = brutobedrag per object.",
+      "Tarieven volgen PP 34/2017 en PP 55/2022.",
+      "Finale PPh = grondslag × tarief."
+    ],
+    "info": {
+      "title": "Notities",
+      "items": [
+        "Finale inhouding is niet verrekenbaar in de jaaropgave.",
+        "Bouwtarieven hangen af van bedrijfsqualificatie.",
+        "PP23 mkb volgt de drempel van 500 mln IDR omzet."
+      ]
+    },
+    "breakdown": {
+      "section": "Belastinggrondslag",
+      "value": "Objectwaarde",
+      "rate": "Finale tarief",
+      "tax": "Finale PPh 4(2)"
+    }
+  },
+  "ppnCalc": {
+    "title": "BTW-calculator",
+    "description": "Bereken DPP en BTW voor inclusieve of exclusieve prijzen—ideaal voor e-factuurcontrole.",
+    "summary": {
+      "label": "Verschuldigde BTW",
+      "metaInclusive": "Prijs is inclusief BTW",
+      "metaExclusive": "Prijs is exclusief BTW"
+    },
+    "explanationTitle": "BTW-formule",
+    "form": {
+      "title": "Transactiedata",
+      "taxYear": "Belastingjaar",
+      "basePrice": "Verkoopprijs",
+      "basePriceDesc": "Voer BTW-inclusieve prijs in als de schakelaar hieronder aan staat.",
+      "discount": "Korting (-)",
+      "otherCosts": "Andere kosten (+)",
+      "customRate": "Aangepast tarief (optioneel)",
+      "customRateDesc": "In procenten.",
+      "toggleTitle": "Is de prijs inclusief BTW?",
+      "toggleHint": "Schakel om het bedrag te splitsen in DPP + BTW.",
+      "toggleTrue": "Ja, inclusief",
+      "toggleFalse": "Nee, exclusief"
+    },
+    "explanation": [
+      "Als prijs exclusief BTW: DPP = prijs − korting + andere kosten.",
+      "Als prijs inclusief BTW: DPP = prijs / (1 + tarief).",
+      "BTW = DPP × tarief; totaal factuur = DPP + BTW."
+    ],
+    "info": {
+      "title": "Goede gewoonten",
+      "items": [
+        "Zorg dat kortingen van de DPP worden afgetrokken.",
+        "Gebruik aangepaste tarieven alleen bij PMK-incentives.",
+        "Bewaar factuurnummers voor audittrail."
+      ]
+    },
+    "breakdown": {
+      "baseSection": "Belastinggrondslag",
+      "dpp": "DPP",
+      "taxSection": "BTW-berekening",
+      "rate": "BTW-tarief",
+      "tax": "Verschuldigde BTW",
+      "total": "Totaal factuur"
+    },
+    "notes": {
+      "dppInclusive": "prijs is inclusief BTW",
+      "dppExclusive": "prijs vóór BTW"
+    }
+  },
+  "ppnbmCalc": {
+    "title": "Luxe-BTW-calculator",
+    "description": "Simuleer PPNBM voor voertuigen, sieraden, premium elektronica.",
+    "summary": {
+      "label": "Verschuldigde PPNBM",
+      "meta": "DPP volgt BTW-grondslag"
+    },
+    "explanationTitle": "Stappen",
+    "form": {
+      "title": "Details luxe goederen",
+      "goodsType": "Type goederen",
+      "dpp": "BTW-grondslag (meestal verkoopprijs)",
+      "customRate": "Aangepast tarief (optioneel)",
+      "customRateDesc": "Gebruik wanneer tarief afwijkt van standaard."
+    },
+    "options": {
+      "goodsType": {
+        "kendaraanMewah": "Luxe voertuig",
+        "perhiasan": "Sieraden/edelsteen",
+        "kapalPesiar": "Jacht",
+        "elektronikPremium": "Premium elektronica"
+      }
+    },
+    "explanation": [
+      "PPNBM-grondslag is meestal gelijk aan de BTW-grondslag.",
+      "Tarieven hangen af van productgroep (PMK 141/2021).",
+      "PPNBM = grondslag × tarief."
+    ],
+    "info": {
+      "title": "Onthoud",
+      "items": [
+        "PPNBM is niet verrekenbaar.",
+        "Controleer op export/KITE-vrijstellingen.",
+        "Splits BTW en PPNBM altijd op facturen."
+      ]
+    },
+    "breakdown": {
+      "section": "Belastinggrondslag",
+      "dpp": "PPNBM-grondslag",
+      "rate": "PPNBM-tarief",
+      "tax": "Verschuldigde PPNBM"
+    }
+  },
+  "pph21Waterfall": {
+    "groups": {
+      "gross": "A. Bruto-inkomen",
+      "deductions": "B. Aftrekken",
+      "basis": "C. Belastinggrondslag",
+      "taxDue": "D. Verschuldigde belasting (Pasal 17)",
+      "settlement": "E. Verrekening",
+      "takeHome": "F. Netto loon"
+    },
+    "rows": {
+      "salaryAnnual": "Basissalaris (jaarlijks)",
+      "allowanceAnnual": "Vergoedingen/bonus (jaarlijks)",
+      "totalGross": "Totaal bruto-inkomen",
+      "jobCost": "Beroepskostenaftrek",
+      "pension": "Pensioen/JHT-bijdrage",
+      "zakat": "Zakat/donatie",
+      "totalDeductions": "Totale aftrekken",
+      "netIncome": "Netto-inkomen",
+      "ptkp": "PTKP",
+      "pkpRounded": "Afgeronde PKP",
+      "totalTaxYear": "Totale jaarlijkse PPh 21",
+      "terPerPeriod": "PPh 21 TER per periode",
+      "terPaid": "(-) TER ingehouden jan–nov",
+      "overpaid": "Teveel betaalde TER",
+      "decemberAdjustment": "Aanpassing december (te weinig)",
+      "takeHomeAnnual": "Netto jaarinkomen",
+      "takeHomePeriod": "Netto per periode"
+    },
+    "notes": {
+      "salaryAnnual": "Ca. {{months}} periodes",
+      "allowanceAnnual": "Vaste/variabele vergoedingen & bonus",
+      "totalGross": "Totaal bruto-inkomen",
+      "jobCost": "5% van bruto, max 6M/jaar",
+      "pension": "Door werknemer betaalde bijdrage",
+      "zakat": "Via werkgever",
+      "netIncome": "Bruto − aftrekken",
+      "ptkp": "Gebaseerd op gezinsstatus",
+      "totalTaxYear": "Volledige jaarlast",
+      "terPerPeriod": "{{rate}} × bruto per periode",
+      "terPaid": "{{rate}} × {{months}} periodes",
+      "overpaid": "TER is hoger dan Pasal 17-resultaat",
+      "decemberAdjustment": "Resterende last in december",
+      "takeHomeAnnual": "Bruto − belasting",
+      "takeHomePeriod": "{{months}} periodes"
+    },
+    "tierLabel": "Schijf {{tier}}: {{rate}} × {{amount}}",
+    "tierNote": "PKP-schijf {{lower}} – {{upper}}"
+  },
+  "formulaSource": {
+    "title": "Formulebron",
+    "body": "Alle berekeningen verwijzen naar",
+    "link": "Buku_PPh2126_Release_20240108.pdf"
+  },
+  "tableSections": {
+    "waterfall": {
+      "gross": "Bruto-inkomen",
+      "deductions": "Aftrekken",
+      "basis": "Belastinggrondslag",
+      "taxDue": "Verschuldigde belasting",
+      "settlement": "Verrekening",
+      "thp": "Netto loon"
+    }
+  },
+  "errors": {
+    "positiveOnly": "Gebruik alleen positieve getallen."
+  }
+}
